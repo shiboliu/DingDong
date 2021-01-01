@@ -10,7 +10,8 @@
         android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/Theme.DingDong">
+        <activity android:name=".activity.AppIntroActivity"/>
         <activity android:name=".activity.RegisterActivity"/>
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".MainActivity">

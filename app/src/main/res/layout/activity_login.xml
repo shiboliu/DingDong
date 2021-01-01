@@ -10,19 +10,19 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/logo"
-            android:background="@null"/>
+            android:background="@null"
+            android:src="@drawable/logo" />
 
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="欢迎登录小伴"/>
+        android:text="欢迎登录小伴" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,27 +39,27 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:hint="请输入手机号"
-            android:background="@null" />
+            android:background="@null"
+            android:hint="请输入手机号" />
 
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/black"/>
+        android:background="@color/black" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left|center"
-        android:text="未注册的手机号验证后自动创建小伴账户"/>
+        android:text="未注册的手机号验证后自动创建小伴账户" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="获取短信验证码"
-        android:background="@null"/>
+        android:background="@null"
+        android:text="获取短信验证码" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,9 +67,7 @@
         android:orientation="horizontal">
 
 
-
     </LinearLayout>
-
 
 
 </LinearLayout>
