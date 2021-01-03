@@ -2,11 +2,10 @@ package com.example.dingdong.activity;
 
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.dingdong.BaseActivity;
 import com.example.dingdong.R;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

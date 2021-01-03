@@ -5,11 +5,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.dingdong.activity.AppIntroActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        if (sharedPreferences.getBoolean("flag", false)){
+        if (!sharedPreferences.getBoolean("flag", false)){
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putBoolean("flag", true);
             editor.apply();
